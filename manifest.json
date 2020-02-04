@@ -1,0 +1,20 @@
+{
+  "name": "Unbelievable of Time",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "king of time is unbelievable ",
+  "browser_action": {
+    "default_title": "KOT unbelievable",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["https://s2.kingtime.jp/admin/*"],
+    "js": [
+      "unbelievable.js"
+    ],
+    "css": ["unbelievable.css"]
+  }],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
