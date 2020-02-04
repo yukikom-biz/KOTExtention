@@ -2,6 +2,7 @@
   "name": "Unbelievable of Time",
   "version": "1.0.0",
   "manifest_version": 2,
+  "default_locale": "ja_JP",
   "description": "king of time is unbelievable ",
   "browser_action": {
     "default_title": "KOT unbelievable",
@@ -15,6 +16,10 @@
     "css": ["unbelievable.css"]
   }],
   "background": {
-    "scripts": ["background.js"]
-  }
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "storage"
+  ]
 }

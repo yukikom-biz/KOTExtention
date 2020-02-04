@@ -1,9 +1,16 @@
-let button = document.getElementById('#btn');
+// const button = document.getElementById('btn');
+//
+// button.addEventListener('click',function(){
+//     chrome.runtime.sendMessage('YO!')
+// });
+//
+// chrome.runtime.onMessage.addListener(function (message) {
+//     console.log(message);
+// });
 
-button.addEventListener('click',()=>{
-    chrome.runtime.sendMessage({ greeting: "hello" },
-        function(response) {
-        console.log(response);
-    });
+let changeColor = document.getElementById('btn');
 
-});
+// chrome.storage.sync.get('color', function (data) {
+//     changeColor.style.backgroundColor = data.color;
+//     changeColor.setAttribute('value', data.color);
+// });
