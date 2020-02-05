@@ -1,0 +1,20 @@
+{
+  "name": "ReStyle of Time",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "default_locale": "ja_JP",
+  "description": "Re Styling king of time  ",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://s2.kingtime.jp/admin/*"
+      ],
+      "js": [
+        "reStyle.js"
+      ],
+      "css": [
+        "reStyle.css"
+      ]
+    }
+  ]
+}
